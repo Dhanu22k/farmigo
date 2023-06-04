@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farmmanagement.ManagerPanel.RegisterController">
+    <children>
+        <TextField fx:id="ProductNameField" layoutX="67.0" layoutY="154.0" prefHeight="37.0" prefWidth="157.0" promptText="Name" />
+        <TextField fx:id="ProductSalesField" layoutX="343.0" layoutY="154.0" prefHeight="37.0" prefWidth="167.0" promptText="Total_sales" />
+        <TextField fx:id="ProductSearchField" layoutX="87.0" layoutY="64.0" prefHeight="37.0" prefWidth="348.0" promptText="Enter Product id" />
+        <Button fx:id="searchBtn" layoutX="436.0" layoutY="64.0" mnemonicParsing="false" onAction="#ProductSeacrhAction" prefHeight="37.0" prefWidth="77.0" text="Search" />
+        <Button fx:id="updateBtn" layoutX="101.0" layoutY="267.0" mnemonicParsing="false" onAction="#ProductUpadateAction" prefHeight="45.0" prefWidth="128.0" text="Update" />
+        <Button fx:id="deleteBtn" layoutX="370.0" layoutY="267.0" mnemonicParsing="false" onAction="#ProductDeleteAction" prefHeight="45.0" prefWidth="115.0" text="Delete" />
+        <Label fx:id="warnLabel" layoutX="99.0" layoutY="9.0" prefHeight="25.0" prefWidth="510.0" style="-fx-alignment: center;" textFill="#f61212">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

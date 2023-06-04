@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane blendMode="MULTIPLY" cacheShape="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="1293.0" style="-fx-background-color: #70db70;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farmmanagement.AdminDashBoard.AdminDashBoard">
+   <children>
+      <VBox layoutY="-2.0" prefHeight="683.0" prefWidth="169.0" style="-fx-background-color: #EBE8F9;">
+         <children>
+            <Pane fx:id="profile" prefHeight="165.0" prefWidth="169.0" style="-fx-background-color: #47d147;">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="40.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="49.0" layoutY="97.0" prefHeight="26.0" prefWidth="54.0" text="Admin" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Label fx:id="idField" layoutX="66.0" layoutY="118.0" prefHeight="21.0" prefWidth="96.0" underline="true">
+                     <font>
+                        <Font name="Georgia" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="47.0" layoutY="118.0" text="ID:">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Pane fx:id="homeBtn" onMouseClicked="#HomeAction" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: grey; -fx-border-color: black;">
+               <children>
+                  <Label layoutX="70.0" layoutY="22.0" prefHeight="21.0" prefWidth="80.0" text="Home" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="31.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/home-icon-silhouette.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="managerBtn" onMouseClicked="#ManagerAction" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: grey; -fx-border-color: black;">
+               <children>
+                  <Label layoutX="70.0" layoutY="22.0" prefHeight="21.0" prefWidth="80.0" text="Managers" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="31.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/register.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="391.0" prefWidth="169.0" style="-fx-background-color: grey;">
+               <children>
+                  <Pane fx:id="aboutBtn" layoutX="-1.0" layoutY="65.0" onMouseClicked="#AboutAction" prefHeight="65.0" prefWidth="169.0" style="-fx-background-color: grey; -fx-border-color: black;">
+                     <children>
+                        <Label layoutX="70.0" layoutY="21.0" prefHeight="21.0" prefWidth="80.0" text="About" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="31.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Assets/settings_24px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="logoutBtn" layoutX="-1.0" layoutY="130.0" onMouseClicked="#LogoutAction" prefHeight="65.0" prefWidth="169.0" style="-fx-background-color: grey; -fx-border-color: black;">
+                     <children>
+                        <Label layoutX="70.0" layoutY="21.0" prefHeight="21.0" prefWidth="80.0" text="Log Out" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="31.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Assets/login_24px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="farmsBtn" layoutX="-1.0" onMouseClicked="#farmsAction" prefHeight="65.0" prefWidth="169.0" style="-fx-background-color: grey; -fx-border-color: black;">
+                     <children>
+                        <Label fx:id="" layoutX="70.0" layoutY="21.0" prefHeight="21.0" prefWidth="80.0" text="Farms" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="31.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Assets/field.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children></Pane>
+         </children>
+      </VBox>
+      <BorderPane fx:id="borderPane" layoutX="272.0" layoutY="109.0" prefHeight="475.0" prefWidth="905.0" />
+      <ImageView fitHeight="160.0" fitWidth="414.0" layoutX="472.0" layoutY="-42.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@Assets/Farmigo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

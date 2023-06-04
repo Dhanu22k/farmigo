@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farmmanagement.ManagerPanel.HomeController">
+   <children>
+      <Label layoutX="211.0" layoutY="2.0" prefHeight="65.0" prefWidth="492.0" style="-fx-alignment: center;" text="Dash Board" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+         <effect>
+            <Glow level="0.62" />
+         </effect>
+      </Label>
+      <AnchorPane layoutX="57.0" layoutY="111.0" prefHeight="414.0" prefWidth="904.0" style="-fx-background-color: #ffffb3;">
+         <children>
+            <Label fx:id="farmidField" layoutX="122.0" layoutY="52.0" prefHeight="52.0" prefWidth="375.0" text="Farm id:">
+               <font>
+                  <Font name="Consolas" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="locationField" layoutX="109.0" layoutY="116.0" prefHeight="52.0" prefWidth="375.0" text="Location:">
+               <font>
+                  <Font name="Consolas" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="landsizeField" layoutX="97.0" layoutY="183.0" prefHeight="52.0" prefWidth="413.0" text="Land Size:">
+               <font>
+                  <Font name="Consolas" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="mgridField" layoutX="311.0" layoutY="55.0" prefHeight="52.0" prefWidth="304.0" style="-fx-alignment: center;">
+         <font>
+            <Font name="Consolas" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

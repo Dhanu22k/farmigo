@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="798.0" style="-fx-background-color: #00ffaa;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farmmanagement.ManagerPanel.RegisterController">
+   <children>
+      <ImageView fitHeight="152.0" fitWidth="175.0" layoutX="70.0" layoutY="101.0" onMouseClicked="#workerRegister" pickOnBounds="true">
+         <image>
+            <Image url="@icons/farmer-btn-img.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.11" contrast="0.64" hue="0.05" saturation="-0.2" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="147.0" fitWidth="178.0" layoutX="309.0" layoutY="115.0" onMouseClicked="#cropsRegister" pickOnBounds="true">
+         <image>
+            <Image url="@icons/icons8-harvest-64.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.39" contrast="0.53" hue="0.09" saturation="0.33" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="147.0" fitWidth="178.0" layoutX="531.0" layoutY="118.0" onMouseClicked="#animalRegister" pickOnBounds="true">
+         <image>
+            <Image url="@icons/icons8-cow-48.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.3" contrast="0.44" hue="0.06" saturation="0.33" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="85.0" layoutY="248.0" prefHeight="39.0" prefWidth="149.0" style="-fx-alignment: center;" text="Worker" textFill="#1b85cc">
+         <font>
+            <Font name="Impact" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="252.0" prefHeight="39.0" prefWidth="149.0" style="-fx-alignment: center;" text="Crops" textFill="#1b85cc">
+         <font>
+            <Font name="Impact" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="253.0" prefHeight="39.0" prefWidth="149.0" style="-fx-alignment: center;" text="Animals" textFill="#1b85cc">
+         <font>
+            <Font name="Impact" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="14.0" prefHeight="47.0" prefWidth="526.0" style="-fx-alignment: center;" text="Registration" textFill="#d71e1e">
+         <font>
+            <Font name="Comic Sans MS" size="51.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1293.0" style="-fx-background-color: #e6ffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farmmanagement.ManagerPanel.ManagerPanel">
+    <children>
+        <VBox layoutX="-8.0" prefHeight="697.0" prefWidth="179.0" style="-fx-background-color: #80ffcc;">
+            <children>
+                <ImageView fitHeight="114.0" fitWidth="113.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/man.png" />
+                    </image>
+                    <viewport>
+                        <Rectangle2D />
+                    </viewport>
+                    <VBox.margin>
+                        <Insets left="35.0" top="18.0" />
+                    </VBox.margin>
+                </ImageView>
+                <Label prefHeight="18.0" prefWidth="180.0" text="Manager">
+                    <padding>
+                        <Insets bottom="3.0" left="67.0" top="3.0" />
+                    </padding>
+                </Label>
+            <Label fx:id="idLabel" prefHeight="17.0" prefWidth="179.0" style="-fx-alignment: center;" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+                <Button fx:id="homeBtn" graphicTextGap="10.0" lineSpacing="4.0" mnemonicParsing="false" onAction="#homeAction" opacity="0.8" prefHeight="50.0" prefWidth="179.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Home      ">
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/home.png" />
+                            </image></ImageView>
+                    </graphic>
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <padding>
+                        <Insets left="50.0" top="11.0" />
+                    </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </Button>
+                <Button fx:id="workersBtn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#workersAction" opacity="0.8" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Workers   " textAlignment="CENTER" wrapText="true">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/worker.png" />
+                            </image></ImageView>
+                    </graphic>
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+                <Button fx:id="animalBtn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#animalAction" opacity="0.8" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Animal     " textAlignment="CENTER" wrapText="true">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/animal.png" />
+                            </image></ImageView>
+                    </graphic>
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+            <Button fx:id="cropsBtn" graphicTextGap="10.0" layoutX="10.0" layoutY="415.0" mnemonicParsing="false" onAction="#cropsAction" opacity="0.8" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Crops       " textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/crop.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Glow />
+               </effect>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+                <Button fx:id="salesBtn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#salesAction" opacity="0.8" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Sales        " textAlignment="CENTER" wrapText="true">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/basket_30px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+            <Button fx:id="financeBtn" graphicTextGap="10.0" layoutX="10.0" layoutY="435.0" mnemonicParsing="false" onAction="#financeAction" opacity="0.8" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Finance     " textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/register.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Glow />
+               </effect>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+                <Button fx:id="registerBtn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#registerAction" opacity="0.8" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Register   " textAlignment="CENTER" wrapText="true">
+                    <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/register.png" />
+                            </image></ImageView>
+                    </graphic>
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+                <Button fx:id="settingsBtn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#settingsAction" opacity="0.8" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Settings    " textAlignment="CENTER" wrapText="true">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/settings_24px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+                <Button fx:id="logoutBtn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#logoutAction" opacity="0.8" prefHeight="50.0" prefWidth="176.0" style="-fx-background-color: #80ffcc; -fx-text-fill: black;" text="Log out     " textAlignment="CENTER" wrapText="true">
+                    <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/login_24px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Button>
+            </children>
+        </VBox>
+        <HBox layoutX="171.0" layoutY="-2.0" prefHeight="67.0" prefWidth="1127.0" style="-fx-background-color: #b3ffe0;">
+            <children>
+                <ImageView fitHeight="186.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/Farmigo.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets bottom="-62.0" left="245.0" right="24.0" top="-51.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+      <BorderPane fx:id="borderpane" layoutX="239.0" layoutY="71.0" prefHeight="573.0" prefWidth="800.0" />
+    </children>
+</AnchorPane>

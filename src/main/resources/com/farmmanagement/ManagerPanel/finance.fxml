@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.farmmanagement.ManagerPanel.FinanceController">
+    <children>
+        <BarChart fx:id="IncomeBarChart" layoutX="73.0" layoutY="38.0" prefHeight="349.0" prefWidth="667.0" title="Income and Expenditure">
+            <xAxis>
+                <CategoryAxis label="year" prefHeight="30.0" prefWidth="580.0" startMargin="6.0" tickLabelGap="13.0">
+               <tickLabelFont>
+                  <Font size="19.0" />
+               </tickLabelFont></CategoryAxis>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Rs" side="LEFT" tickLabelFill="#ff0d0d" />
+            </yAxis>
+        </BarChart>
+        <Button layoutX="132.0" layoutY="396.0" mnemonicParsing="false" onAction="#EnterDataAction" prefHeight="52.0" prefWidth="118.0" style="-fx-background-color: #4d88ff;" text="Enter Data" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
